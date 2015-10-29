@@ -1,0 +1,11 @@
+<div class="jumbotron center">
+
+    <h1>Welcome to my pinterested app!</h1>
+    <p>it's cool,isn't it?</p>
+    <% if !user_signed_in? %>
+  <%= link_to "Login", new_user_session_path, class:'btn btn-info'%>
+
+   <%= link_to "Join", new_user_registration_path, class:'btn btn-info'%>
+   <% end %>
+</div>
+
